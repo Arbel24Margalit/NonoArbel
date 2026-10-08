@@ -1,0 +1,1 @@
+function e(e,t,n,r){let i=[],a=0;for(let o=0;o<r;o++)e[t+o*n]?a++:a&&=(i.push(a),0);return a&&i.push(a),i.length?i:[0]}function t(t,n,r){let i=[],a=[];for(let a=0;a<r;a++)i.push(e(t,a*n,1,n));for(let i=0;i<n;i++)a.push(e(t,i,n,r));return{width:n,height:r,rows:i,cols:a}}function n(e){return e.length===1&&e[0]===0?[]:e.slice()}export{n,t};
